@@ -42,7 +42,6 @@ import PersonInfoCard from '@/components_myself/cards/PersonInfoCard.vue'
                         :position="{ label: 'UI Designer', color: 'info' }"
                         description="Artist is a term applied to a person who engages in an activity deemed to be an art." />
                 </div>
-
             </div>
         </div>
     </section>

@@ -1,5 +1,10 @@
 <script setup>
 import logoDark from "@/assets/img/logo-ct-dark.png";
+import ORCID from "@/assets/img/logos/ORCID.svg";
+import Email from "@/assets/img/logos/email.svg";
+import Github from "@/assets/img/logos/github.svg";
+import WeiChat from "@/assets/img/logos/weichat.svg";
+
 defineProps({
   brand: {
     type: Object,
@@ -12,114 +17,6 @@ defineProps({
       route: "/"
     })
   },
-  socials: {
-    type: Array,
-    icon: String,
-    link: String,
-    default: () => [
-      {
-        icon: '<i class="fab fa-facebook text-lg opacity-8"></i>',
-        link: "https://www.facebook.com/CreativeTim/"
-      },
-      {
-        icon: '<i class="fab fa-twitter text-lg opacity-8"></i>',
-        link: "https://twitter.com/creativetim"
-      },
-      {
-        icon: '<i class="fab fa-dribbble text-lg opacity-8"></i>',
-        link: "https://dribbble.com/creativetim"
-      },
-      {
-        icon: '<i class="fab fa-github text-lg opacity-8"></i>',
-        link: "https://github.com/creativetimofficial"
-      },
-      {
-        icon: '<i class="fab fa-youtube text-lg opacity-8"></i>',
-        link: "https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w"
-      }
-    ]
-  },
-  menus: {
-    type: Array,
-    name: String,
-    items: {
-      type: Array,
-      name: String,
-      href: String
-    },
-    default: () => [
-      {
-        name: "company",
-        items: [
-          {
-            name: "about us",
-            href: "https://www.creative-tim.com/presentation"
-          },
-          {
-            name: "freebies",
-            href: "https://www.creative-tim.com/templates/free"
-          },
-          {
-            name: "premium tools",
-            href: "https://www.creative-tim.com/templates/premium"
-          },
-          { name: "blog", href: "https://www.creative-tim.com/blog" }
-        ]
-      },
-      {
-        name: "resources",
-        items: [
-          { name: "illustrations", href: "https://iradesign.io/" },
-          {
-            name: "bits & snippets",
-            href: "https://www.creative-tim.com/bits"
-          },
-          {
-            name: "affiliate program",
-            href: "https://www.creative-tim.com/affiliates/new"
-          }
-        ]
-      },
-      {
-        name: "help & support",
-        items: [
-          {
-            name: "contact us",
-            href: "https://www.creative-tim.com/contact-us"
-          },
-          {
-            name: "knowledge center",
-            href: "https://www.creative-tim.com/knowledge-center"
-          },
-          {
-            name: "custom development",
-            href: "https://services.creative-tim.com/"
-          },
-          {
-            name: "sponsorships",
-            href: "https://www.creative-tim.com/sponsorships"
-          }
-        ]
-      },
-      {
-        name: "legal",
-        items: [
-          {
-            name: "terms & conditions",
-            href: "https://www.creative-tim.com/terms"
-          },
-          {
-            name: "privacy policy",
-            href: "https://www.creative-tim.com/privacy"
-          },
-          {
-            name: "licenses (EULA)",
-            href: "https://www.creative-tim.com/license"
-          }
-        ]
-      }
-    ]
-  }
 });
 </script>
 <template>
@@ -133,37 +30,44 @@ defineProps({
             </a>
             <h6 class="font-weight-bolder mb-4">{{ brand.name }}</h6>
           </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3">
+          <div class="footer-info">
+            <a href="#" target="_blank">
+              <img :src="ORCID" alt="down-arrow" class="arrow" :style="'width: 40px; height: 40px;'" />
+              <p>ORCID</p>
+            </a>
+          </div>
           <div>
-            <ul class="d-flex flex-row ms-n3 nav">
-              <li
-                class="nav-item"
-                v-for="{ icon, link } of socials"
-                :key="link"
-              >
-                <a
-                  class="nav-link pe-1"
-                  :href="link"
-                  target="_blank"
-                  v-html="icon"
-                >
-                </a>
-              </li>
-            </ul>
+            <div class="footer-info">
+              <a href="#" target="_blank">
+                <img :src="Github" alt="down-arrow" class="arrow" :style="'width: 40px; height: 40px;'" />
+                <p>Github</p>
+              </a>
+            </div>
           </div>
         </div>
-        <div
-          class="col-md-2 col-sm-6 col-6 mb-4"
-          v-for="{ name, items } of menus"
-          :key="name"
-        >
-          <h6 class="text-sm">{{ name }}</h6>
-          <ul class="flex-column ms-n3 nav">
-            <li class="nav-item" v-for="item of items" :key="item.name">
-              <a class="nav-link" :href="item.href" target="_blank">
-                {{ item.name }}
-              </a>
-            </li>
-          </ul>
+        <div class="col-sm-12 col-md-3 col-lg-3">
+          <div class="footer-info">
+            <a href="#" target="_blank">
+              <img :src="Email" alt="down-arrow" class="arrow" :style="'width: 40px; height: 40px;'" />
+              <p>电子邮件</p>
+            </a>
+          </div>
+          <div class="footer-info">
+            <a href="#" target="_blank">
+              <img :src="WeiChat" alt="down-arrow" class="arrow" :style="'width: 40px; height: 40px;'" />
+              <p>公众号</p>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3">
+          <div>
+            <h4>详细地址:</h4>
+            <p>新疆石河子市北五路，北苑新区，农学院316A</p>
+            <h4>联系电话：</h4>
+            <p>027-87283955</p>
+          </div>
         </div>
 
         <div class="col-12">

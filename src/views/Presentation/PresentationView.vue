@@ -26,7 +26,9 @@ import PresentationInformation from "./Sections/PresentationInformation.vue";
 import PresentationResearch from './Sections/PresentationResearch.vue'
 import PresentationNew from './Sections/PresentationNew.vue'
 import PresentationTeam from './Sections/PresentationTeam.vue'
-import DefaultFooter from "../../components_myself/footer/FooterDefault.vue";
+import DefaultFooter from "@/components_myself/footer/FooterDefault.vue";
+import PresentationShow from "./Sections/PresentationShow.vue";
+
 
 //images
 import vueMkHeader from "@/assets/img/vue-mk-header.jpg";
@@ -62,7 +64,7 @@ onUnmounted(() => {
     <div class="page-header min-vh-75" :style="`background-image: url(${vueMkHeader})`" loading="lazy">
       <div class="container">
         <div class="row">
-          <div class="col-lg-7 text-center mx-auto position-relative">
+          <div class="col-lg-8 text-center mx-auto position-relative">
             <h1 class="text-white pt-3 mt-n5 me-2" :style="{ display: 'inline-block ' }">
               立志成为国家科技创新的栋梁之材。
             </h1>
@@ -84,8 +86,10 @@ onUnmounted(() => {
     </div> -->
     <PresentationResearch />
     <PresentationNew />
-    <PresentationTeam />
+    <!-- <PresentationTeam /> -->
+    <PresentationShow />
     <PresentationCounter />
+    <!-- <LoseSite/> -->
   </div>
   <DefaultFooter />
 </template>

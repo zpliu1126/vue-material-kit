@@ -15,7 +15,7 @@ const props = defineProps({
     color: String,
     label: String,
     default: () => ({
-      route: "https://www.creative-tim.com/product/vue-material-kit",
+      route: "javascript:;",
       color: "bg-gradient-success",
       label: "联系我们"
     })
@@ -99,8 +99,8 @@ watch(
     ' navbar-dark bg-gradient-dark z-index-3 py-3': props.dark
   }">
     <div :class="props.transparent || props.light || props.dark
-        ? 'container'
-        : 'container-fluid px-0'
+      ? 'container'
+      : 'container-fluid px-0'
       ">
       <RouterLink class="navbar-brand d-none d-md-block" :class="[
         (props.transparent && textDark.value) || !props.transparent
@@ -111,16 +111,15 @@ watch(
         张献龙院士工作站
       </RouterLink>
       <RouterLink class="navbar-brand d-block d-md-none" :class="props.transparent || props.dark
-          ? 'text-white'
-          : 'font-weight-bolder ms-sm-3'
+        ? 'text-white'
+        : 'font-weight-bolder ms-sm-3'
         " to="/" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom">
         张献龙院士工作站
       </RouterLink>
-      <a
-        href="https://www.creative-tim.com/product/vue-material-kit-pro"
-        class="btn btn-sm bg-gradient-success mb-0 ms-auto d-lg-none d-block"
-        >联系我们</a
-      >
+      <RouterLink :to="{ name: 'contactus' }" class="btn btn-sm bg-gradient-success mb-0 ms-auto d-lg-none d-block">
+        <span>联系我们</span>
+      </RouterLink>
+
       <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse"
         data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon mt-2">
@@ -148,7 +147,7 @@ watch(
                       <RouterLink :to="{ name: 'about' }" class="dropdown-item border-radius-md">
                         <span>团队核心</span>
                       </RouterLink>
-                      <RouterLink :to="{ name: 'contactus' }" class="dropdown-item border-radius-md">
+                      <RouterLink :to="{ name: '404' }" class="dropdown-item border-radius-md">
                         <span>发展历史</span>
                       </RouterLink>
                       <!-- <div
@@ -156,7 +155,7 @@ watch(
                       >
                         Account
                       </div> -->
-                      <RouterLink :to="{ name: 'signin-basic' }" class="dropdown-item border-radius-md">
+                      <RouterLink :to="{ name: '404' }" class="dropdown-item border-radius-md">
                         <span>研究领域</span>
                       </RouterLink>
                     </div>
@@ -167,10 +166,10 @@ watch(
                 <RouterLink :to="{ name: 'about' }" class="dropdown-item border-radius-md">
                   <span>团队核心</span>
                 </RouterLink>
-                <RouterLink :to="{ name: 'contactus' }" class="dropdown-item border-radius-md">
+                <RouterLink :to="{ name: '404' }" class="dropdown-item border-radius-md">
                   <span>发展历史</span>
                 </RouterLink>
-                <RouterLink :to="{ name: 'author' }" class="dropdown-item border-radius-md">
+                <RouterLink :to="{ name: '404' }" class="dropdown-item border-radius-md">
                   <span>研究领域</span>
                 </RouterLink>
               </div>
@@ -204,10 +203,10 @@ watch(
                       </div>
                     </a>
                     <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-                      <RouterLink class="dropdown-item ps-3 border-radius-md mb-1" :to="{ name: 'page-headers' }">
+                      <RouterLink class="dropdown-item ps-3 border-radius-md mb-1" :to="{ name: '404' }">
                         发表文章
                       </RouterLink>
-                      <RouterLink class="dropdown-item ps-3 border-radius-md mb-1" :to="{ name: 'page-features' }">
+                      <RouterLink class="dropdown-item ps-3 border-radius-md mb-1" :to="{ name: '404' }">
                         获批专利
                       </RouterLink>
                     </div>
@@ -228,15 +227,13 @@ watch(
                       </div>
                     </a>
                     <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-                      <RouterLink class="dropdown-item ps-3 border-radius-md mb-1" :to="{ name: 'navigation-navtabs' }">
+                      <RouterLink class="dropdown-item ps-3 border-radius-md mb-1" :to="{ name: '404' }">
                         博后
                       </RouterLink>
-                      <RouterLink class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'navigation-pagination' }">
+                      <RouterLink class="dropdown-item ps-3 border-radius-md mb-1" :to="{ name: '404' }">
                         博士生
                       </RouterLink>
-                      <RouterLink class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'navigation-pagination' }">
+                      <RouterLink class="dropdown-item ps-3 border-radius-md mb-1" :to="{ name: '404' }">
                         硕士生
                       </RouterLink>
                     </div>
@@ -256,10 +253,10 @@ watch(
                       </div>
                     </a>
                     <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-                      <RouterLink class="dropdown-item ps-3 border-radius-md mb-1" :to="{ name: 'inputareas-inputs' }">
+                      <RouterLink class="dropdown-item ps-3 border-radius-md mb-1" :to="{ name: '404' }">
                         实验设施
                       </RouterLink>
-                      <RouterLink class="dropdown-item ps-3 border-radius-md mb-1" :to="{ name: 'inputareas-forms' }">
+                      <RouterLink class="dropdown-item ps-3 border-radius-md mb-1" :to="{ name: '404' }">
                         地理位置
                       </RouterLink>
                     </div>
@@ -278,10 +275,10 @@ watch(
                       </div>
                     </div>
                   </div>
-                  <RouterLink class="dropdown-item ps-3 border-radius-md mb-1" :to="{ name: 'page-headers' }">
+                  <RouterLink class="dropdown-item ps-3 border-radius-md mb-1" :to="{ name: '404' }">
                     发表文章
                   </RouterLink>
-                  <RouterLink class="dropdown-item ps-3 border-radius-md mb-1" :to="{ name: 'page-features' }">
+                  <RouterLink class="dropdown-item ps-3 border-radius-md mb-1" :to="{ name: '404' }">
                     获批专利
                   </RouterLink>
                   <div class="d-flex mb-2 mt-3">
@@ -294,13 +291,13 @@ watch(
                       </div>
                     </div>
                   </div>
-                  <RouterLink class="dropdown-item ps-3 border-radius-md mb-1" :to="{ name: 'navigation-navbars' }">
+                  <RouterLink class="dropdown-item ps-3 border-radius-md mb-1" :to="{ name: '404' }">
                     博后
                   </RouterLink>
-                  <RouterLink class="dropdown-item ps-3 border-radius-md mb-1" :to="{ name: 'navigation-navtabs' }">
+                  <RouterLink class="dropdown-item ps-3 border-radius-md mb-1" :to="{ name: '404' }">
                     博士生
                   </RouterLink>
-                  <RouterLink class="dropdown-item ps-3 border-radius-md mb-1" :to="{ name: 'navigation-pagination' }">
+                  <RouterLink class="dropdown-item ps-3 border-radius-md mb-1" :to="{ name: '404' }">
                     硕士生
                   </RouterLink>
                   <div class="d-flex mb-2 mt-3">
@@ -313,10 +310,10 @@ watch(
                       </div>
                     </div>
                   </div>
-                  <RouterLink class="dropdown-item ps-3 border-radius-md mb-1" :to="{ name: 'inputareas-inputs' }">
+                  <RouterLink class="dropdown-item ps-3 border-radius-md mb-1" :to="{ name: '404' }">
                     实验设施
                   </RouterLink>
-                  <RouterLink class="dropdown-item ps-3 border-radius-md mb-1" :to="{ name: 'inputareas-forms' }">
+                  <RouterLink class="dropdown-item ps-3 border-radius-md mb-1" :to="{ name: '404' }">
                     地理位置
                   </RouterLink>
                 </div>
@@ -337,57 +334,51 @@ watch(
               <div class="d-none d-lg-block">
                 <ul class="list-group">
                   <li class="nav-item list-group-item border-0 p-0">
-                    <a class="dropdown-item py-2 ps-3 border-radius-md"
-                      href=" https://www.creative-tim.com/learning-lab/vue/overview/material-kit/">
+                    <RouterLink class="dropdown-item py-2 ps-3 border-radius-md" :to="{ name: '404' }">
                       <h6
                         class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                         研究进展
                       </h6>
-                    </a>
+                    </RouterLink>
                   </li>
                   <li class="nav-item list-group-item border-0 p-0">
-                    <a class="dropdown-item py-2 ps-3 border-radius-md"
-                      href=" https://www.creative-tim.com/learning-lab/vue/colors/material-kit/">
+                    <RouterLink class="dropdown-item py-2 ps-3 border-radius-md" :to="{ name: '404' }">
                       <h6
                         class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                         新闻报导
                       </h6>
-                    </a>
+                    </RouterLink>
                   </li>
                   <li class="nav-item list-group-item border-0 p-0">
-                    <a class="dropdown-item py-2 ps-3 border-radius-md"
-                      href=" https://www.creative-tim.com/learning-lab/vue/alerts/material-kit/">
+                    <RouterLink class="dropdown-item py-2 ps-3 border-radius-md" :to="{ name: '404' }">
                       <h6
                         class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                         团建时刻
                       </h6>
-                    </a>
+                    </RouterLink>
                   </li>
                 </ul>
               </div>
               <div class="row d-lg-none">
                 <div class="col-md-12 g-0">
-                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="./pages/about-us.html">
+                  <RouterLink class="dropdown-item py-2 ps-3 border-radius-md" :to="{ name: '404' }">
                     <h6
                       class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                       研究进展
                     </h6>
-                  </a>
-                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="./pages/about-us.html">
+                  </RouterLink>
+                  <RouterLink class="dropdown-item py-2 ps-3 border-radius-md" :to="{ name: '404' }">
                     <h6
                       class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                       新闻报导
                     </h6>
-
-                  </a>
-                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="./pages/about-us.html">
+                  </RouterLink>
+                  <RouterLink class="dropdown-item py-2 ps-3 border-radius-md" :to="{ name: '404' }">
                     <h6
                       class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                       团建时刻
                     </h6>
-
-                  </a>
-
+                  </RouterLink>
                 </div>
               </div>
             </div>
@@ -408,8 +399,11 @@ watch(
         <!-- 预留联系我们 -->
         <ul class="navbar-nav d-lg-block d-none">
           <li class="nav-item">
-            <a :href="action.route" class="btn btn-sm mb-0" :class="action.color"
-              onclick="smoothToPricing('pricing-soft-ui')">{{ action.label }}</a>
+            <RouterLink :to="{ name: 'contactus' }" class="btn btn-sm bg-gradient-success mb-0 ms-auto">
+              <span>联系我们</span>
+            </RouterLink>
+            <!-- <a :href="action.route" class="btn btn-sm mb-0" :class="action.color"
+              onclick="smoothToPricing('pricing-soft-ui')">{{ action.label }}</a> -->
           </li>
         </ul>
       </div>
