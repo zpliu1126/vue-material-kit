@@ -25,10 +25,6 @@ function getClasses(size, borderRadius) {
 }
 </script>
 <template>
-  <img
-    class="avatar"
-    :src="image"
-    :class="getClasses(size, borderRadius)"
-    :alt="alt"
-  />
+  <img class="avatar" :src="image" :class="getClasses(size, borderRadius)" :alt="alt"
+    style="height:250px !important; width:250px !important" />
 </template>

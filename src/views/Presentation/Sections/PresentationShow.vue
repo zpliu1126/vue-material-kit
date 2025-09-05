@@ -15,20 +15,20 @@ import Pic5 from '@/assets/img/testImg/pic5.jpg'
             </div>
             <div class="row">
                 <div class="mt-4 col-lg-9 col-md-12">
-                    <div class="row">
-                        <div class="card col-lg-4 d-lg-block d-none">
+                    <div class="row ">
+                        <div class="card col-lg-4 d-lg-block d-none align-content-center ">
                             <div class="card-body pt-3">
-                                <ul>
+                                <ol style='list-style: none'>
                                     <li>
-                                        <h2>学术汇报</h2>
+                                        <h2 class="text-primary">学术汇报</h2>
                                     </li>
                                     <li>
-                                        <h2>学术活动</h2>
+                                        <h2 class="text-secondary">日程摄影</h2>
                                     </li>
                                     <li>
-                                        <h2>团建活动</h2>
+                                        <h2 class="text-info">团建活动</h2>
                                     </li>
-                                </ul>
+                                </ol>
                             </div>
                         </div>
                         <div class=" col-lg-8 col-md-12">

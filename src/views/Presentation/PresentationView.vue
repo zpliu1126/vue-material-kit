@@ -66,7 +66,7 @@ onUnmounted(() => {
         <div class="row">
           <div class="col-lg-8 text-center mx-auto position-relative">
             <h1 class="text-white pt-3 mt-n5 me-2" :style="{ display: 'inline-block ' }">
-              立志成为国家科技创新的栋梁之材。
+              培养国家科技创新的栋梁之材。
             </h1>
             <!-- <p class="lead text-white px-5 mt-3" :style="{ fontWeight: '500' }">
             </p> -->

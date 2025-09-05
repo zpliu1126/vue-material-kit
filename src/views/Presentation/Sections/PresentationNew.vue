@@ -11,12 +11,14 @@ import HorizontalNewsCard from "@/components_myself/cards/HorizontalNewsCard.vue
         </div>
         <div class="row">
             <div class="col-lg-12 col-12">
-                <HorizontalNewsCard image="https://bit.ly/3HCDiqM" :profile="{ name: 'Emma Roberts', link: 'javascript:;' }"
+                <HorizontalNewsCard image="https://dummyimage.com/400x400"
+                    :profile="{ name: 'Emma Roberts', link: 'javascript:;' }"
                     :position="{ label: 'UI Designer', color: 'info' }"
                     description="Artist is a term applied to a person who engages in an activity deemed to be an art." />
             </div>
             <div class="col-lg-12 col-12">
-                <HorizontalNewsCard image="https://bit.ly/3HCDiqM" :profile="{ name: 'Emma Roberts', link: 'javascript:;' }"
+                <HorizontalNewsCard image="https://dummyimage.com/400x400"
+                    :profile="{ name: 'Emma Roberts', link: 'javascript:;' }"
                     :position="{ label: 'UI Designer', color: 'info' }"
                     description="Artist is a term applied to a person who engages in an activity deemed to be an art." />
             </div>

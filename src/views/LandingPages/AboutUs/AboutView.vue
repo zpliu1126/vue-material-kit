@@ -42,7 +42,7 @@ onUnmounted(() => {
 });
 </script>
 <template>
-  <DefaultNavbar transparent />
+  <DefaultNavbar light />
   <header class="bg-gradient-dark">
     <div class="page-header min-vh-75" :style="{ backgroundImage: `url(${bg0})` }">
       <span class="mask bg-gradient-dark opacity-6"></span>

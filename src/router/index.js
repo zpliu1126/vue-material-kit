@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 import PresentationView from "../views/Presentation/PresentationView.vue";
 import AboutView from "../views/LandingPages/AboutUs/AboutView.vue";
 import ContactView from "../views/LandingPages/ContactUs/ContactView.vue";
@@ -26,8 +26,10 @@ import ElTypography from "../layouts/sections/elements/typography/TypographyView
 
 //self component
 import LoseSite from "@/components_myself/404.vue";
+import TeacherView from '../views/TeacherShowInformation/TeacherShow.vue'
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  // history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: "/",
@@ -43,6 +45,11 @@ const router = createRouter({
       path: "/pages/landing-pages/contact-us",
       name: "contactus",
       component: ContactView,
+    },
+    {
+      path: "/pages/teacher",
+      name: "theacher",
+      component: TeacherView,
     },
     {
       path: "/pages/landing-pages/author",

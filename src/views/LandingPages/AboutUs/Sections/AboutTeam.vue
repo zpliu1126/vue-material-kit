@@ -12,6 +12,7 @@ import cyyou from "@/assets/img/teachers/cyyou.jpg";
 import djyuan from "@/assets/img/teachers/djyuan.jpg";
 import lfzhu from "@/assets/img/teachers/lfzhu.jpg";
 import lilitu from "@/assets/img/teachers/lilitu.jpg";
+import xyyang from "@/assets/img/teachers/xyyang.png";
 import lmi from "@/assets/img/teachers/lmi.jpg";
 import mjwang from "@/assets/img/teachers/mjwang.jpg";
 import sxjin from "@/assets/img/teachers/sxjin.png";
@@ -41,51 +42,49 @@ import zxlin from "@/assets/img/teachers/zxlin.png";
                     activity deemed to be an art." />
         </div>
         <div class="col-lg-6 col-12 mt-5">
-          <HorizontalTeamCard class="mt-lg-4 mt-4" :image="zxlin"
-            :profile="{ name: '林中旭', link: 'javascript:;' }" :position="{ label: 'Boss', color: 'success' }"
-            description="Artist is a term applied to a person who engages in an
+          <HorizontalTeamCard class="mt-lg-4 mt-4" :image="zxlin" :profile="{ name: '林中旭', link: 'javascript:;' }"
+            :position="{ label: 'Boss', color: 'success' }" description="Artist is a term applied to a person who engages in an
                     activity deemed to be an art." />
         </div>
         <div class="col-lg-6 col-12 mt-5">
-          <HorizontalTeamCard class="mt-4 z-index-2" :image="sxjin"
-            :profile="{ name: '金双侠', link: 'javascript:;' }" :position="{ label: 'Athlete', color: 'success' }"
-            description="Artist is a term applied to a person who engages in an
+          <HorizontalTeamCard class="mt-4 z-index-2" :image="sxjin" :profile="{ name: '金双侠', link: 'javascript:;' }"
+            :position="{ label: 'Athlete', color: 'success' }" description="Artist is a term applied to a person who engages in an
                     activity deemed to be an art." />
         </div>
         <div class="col-lg-6 col-12 mt-5">
           <HorizontalTeamCard class="mt-lg-4 mt-4 z-index-2" :image="lilitu"
-            :profile="{ name: '涂礼莉', link: 'javascript:;' }"
-            :position="{ label: 'JS Developer', color: 'success' }" description="Artist is a term applied to a person who engages in an
+            :profile="{ name: '涂礼莉', link: 'javascript:;' }" :position="{ label: 'JS Developer', color: 'success' }"
+            description="Artist is a term applied to a person who engages in an
                     activity deemed to be an art." />
         </div>
         <div class="col-lg-6 col-12 mt-5">
-          <HorizontalTeamCard class="mt-lg-4 mt-5 z-index-2" :image="lilitu"
-            :profile="{ name: '杨细燕', link: 'javascript:;' }"
-            :position="{ label: 'JS Developer', color: 'success' }" description="Artist is a term applied to a person who engages in an
+          <HorizontalTeamCard class="mt-lg-4 mt-5 z-index-2" :image="xyyang"
+            :profile="{ name: '杨细燕', link: 'javascript:;' }" :position="{ label: 'JS Developer', color: 'success' }"
+            description="Artist is a term applied to a person who engages in an
                     activity deemed to be an art." />
         </div>
         <div class="col-lg-6 col-12 mt-5">
           <HorizontalTeamCard class="mt-lg-4 mt-5 z-index-2" :image="mjwang"
-            :profile="{ name: '王茂军', link: 'javascript:;' }"
-            :position="{ label: 'JS Developer', color: 'success' }" description="Artist is a term applied to a person who engages in an
+            :profile="{ name: '王茂军', link: 'javascript:;' }" :position="{ label: 'JS Developer', color: 'success' }"
+            description="Artist is a term applied to a person who engages in an
                     activity deemed to be an art." />
         </div>
         <div class="col-lg-6 col-12 mt-5">
           <HorizontalTeamCard class="mt-lg-4 mt-5 z-index-2" :image="lmi"
-            :profile="{ name: '闵玲', link: 'javascript:;' }"
-            :position="{ label: 'JS Developer', color: 'success' }" description="Artist is a term applied to a person who engages in an
+            :profile="{ name: '闵玲', link: 'javascript:;' }" :position="{ label: 'JS Developer', color: 'success' }"
+            description="Artist is a term applied to a person who engages in an
                     activity deemed to be an art." />
         </div>
         <div class="col-lg-6 col-12 mt-5">
           <HorizontalTeamCard class="mt-lg-4 mt-5 z-index-2" :image="djyuan"
-            :profile="{ name: '袁道军', link: 'javascript:;' }"
-            :position="{ label: 'JS Developer', color: 'success' }" description="Artist is a term applied to a person who engages in an
+            :profile="{ name: '袁道军', link: 'javascript:;' }" :position="{ label: 'JS Developer', color: 'success' }"
+            description="Artist is a term applied to a person who engages in an
                     activity deemed to be an art." />
         </div>
         <div class="col-lg-6 col-12 mt-5">
           <HorizontalTeamCard class="mt-lg-4 mt-5 z-index-2" :image="cyyou"
-            :profile="{ name: '尤春源', link: 'javascript:;' }"
-            :position="{ label: 'JS Developer', color: 'success' }" description="Artist is a term applied to a person who engages in an
+            :profile="{ name: '尤春源', link: 'javascript:;' }" :position="{ label: 'JS Developer', color: 'success' }"
+            description="Artist is a term applied to a person who engages in an
                     activity deemed to be an art." />
         </div>
       </div>
