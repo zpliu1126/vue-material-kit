@@ -27,6 +27,7 @@ import ElTypography from "../layouts/sections/elements/typography/TypographyView
 //self component
 import LoseSite from "@/components_myself/404.vue";
 import TeacherView from '../views/TeacherShowInformation/TeacherShow.vue'
+import TeacherView_lfz from '../views/TeacherShowInformation/TeacherlfZhu.vue'
 const router = createRouter({
   // history: createWebHistory(import.meta.env.BASE_URL),
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -50,6 +51,11 @@ const router = createRouter({
       path: "/pages/teacher",
       name: "theacher",
       component: TeacherView,
+    },
+    {
+      path: "/pages/teacher/zlf",
+      name: "theacher_zlf",
+      component: TeacherView_lfz,
     },
     {
       path: "/pages/landing-pages/author",
@@ -156,11 +162,16 @@ const router = createRouter({
       name: "el-typography",
       component: ElTypography,
     },
+    // 404 路由
     {
       path: "/404",
       name: "404",
       component: LoseSite,
     },
+    {
+      path: "/:catchAll(.*)",
+      redirect: '/404'
+    }
   ],
 });
 

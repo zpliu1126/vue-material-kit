@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 d-flex justify-content-center flex-column">
-                    <img src="https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif" alt="">
+                    <img :src="img404" alt="">
                     <h1 class="mb-2">Look like you're lost</h1>
                     <div class="mt-3">
                         <h2 class="h2">the page you are looking for not avalible!</h2>
@@ -19,4 +19,6 @@
         </div>
     </div>
 </template>
-<script setup></script>
+<script setup>
+import img404 from '@/assets/img/404.gif'
+</script>

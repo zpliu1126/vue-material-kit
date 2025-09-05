@@ -37,7 +37,7 @@ defineProps({
       <p class="mb-0">
         {{ description }}
         <br />
-        <RouterLink :to="{ name: 'theacher' }" class="btn btn-sm bg-gradient-success mt-2 ms-auto">
+        <RouterLink :to="{ name: 'theacher' }" target="_blank" class="btn btn-sm bg-gradient-success mt-2 ms-auto">
           <h6 class="dropdown-header text-white font-weight-bolder d-flex justify-content-cente align-items-center p-0">
             Read More</h6>
         </RouterLink>

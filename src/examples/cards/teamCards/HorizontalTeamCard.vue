@@ -26,13 +26,9 @@ defineProps({
   <div class="card card-profile">
     <div class="row">
       <div class="col-lg-4 col-md-6 col-12 mt-n5">
-        <a :href="profile.link">
+        <a :href="profile.link" target="_blank">
           <div class="p-3 pe-md-0">
-            <img
-              class="w-100 border-radius-md shadow-lg"
-              :src="image"
-              :alt="profile.name"
-            />
+            <img class="w-100 border-radius-md shadow-lg" :src="image" :alt="profile.name" />
           </div>
         </a>
       </div>

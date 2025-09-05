@@ -6,7 +6,7 @@ import Header from "@/examples/Header.vue";
 // sections
 import Profile from "./Sections/AuthorProfile.vue";
 import Posts from "./Sections/AuthorPosts.vue";
-import Information from './Sections/information/AuthorInfo_XLZ.vue'
+import Information from './Sections/AuthorInfo_XLZ.vue'
 
 
 // myself component
