@@ -26,8 +26,19 @@ import ElTypography from "../layouts/sections/elements/typography/TypographyView
 
 //self component
 import LoseSite from "@/components_myself/404.vue";
+import EquipmentView from "../views/equipment/equipment.vue";
+import achievementView from "../views/achievement/achievement.vue";
+import peopleView from "../views/people/people.vue";
 import TeacherView from '../views/TeacherShowInformation/TeacherShow.vue'
 import TeacherView_lfz from '../views/TeacherShowInformation/TeacherlfZhu.vue'
+import TeacherView_ycy from '../views/TeacherShowInformation/TeacherCYYou.vue'
+import TeacherView_ydj from '../views/TeacherShowInformation/TeacherDJYuan.vue'
+import TeacherView_ml from '../views/TeacherShowInformation/TeacherLMin.vue'
+import TeacherView_wmj from '../views/TeacherShowInformation/TeacherMJWang.vue'
+import TeacherView_jsx from '../views/TeacherShowInformation/TeacherSXJin.vue'
+import TeacherView_yxy from '../views/TeacherShowInformation/TeacherXYYang.vue'
+import TeacherView_lzx from '../views/TeacherShowInformation/TeacherZXLin.vue'
+import TeacherView_tll from '../views/TeacherShowInformation/TeacherllTu.vue'
 const router = createRouter({
   // history: createWebHistory(import.meta.env.BASE_URL),
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -56,6 +67,61 @@ const router = createRouter({
       path: "/pages/teacher/zlf",
       name: "theacher_zlf",
       component: TeacherView_lfz,
+    },
+    {
+      path: "/pages/teacher/ycy",
+      name: "theacher_ycy",
+      component: TeacherView_ycy,
+    },
+    {
+      path: "/pages/teacher/ydj",
+      name: "theacher_ydj",
+      component: TeacherView_ydj,
+    },
+    {
+      path: "/pages/teacher/ml",
+      name: "theacher_ml",
+      component: TeacherView_ml,
+    },
+    {
+      path: "/pages/teacher/wmj",
+      name: "theacher_wmj",
+      component: TeacherView_wmj,
+    },
+    {
+      path: "/pages/teacher/jsx",
+      name: "theacher_jsx",
+      component: TeacherView_jsx,
+    },
+    {
+      path: "/pages/teacher/yxy",
+      name: "theacher_yxy",
+      component: TeacherView_yxy,
+    },
+    {
+      path: "/pages/teacher/lzx",
+      name: "theacher_lzx",
+      component: TeacherView_lzx,
+    },
+    {
+      path: "/pages/teacher/tll",
+      name: "theacher_tll",
+      component: TeacherView_tll,
+    },
+    {
+      path: "/pages/equipment",
+      name: "equipment",
+      component: EquipmentView,
+    },
+    {
+      path: "/pages/achievements",
+      name: "achievements",
+      component: achievementView,
+    },
+    {
+      path: "/pages/peoples",
+      name: "peoples",
+      component: peopleView,
     },
     {
       path: "/pages/landing-pages/author",
@@ -162,6 +228,11 @@ const router = createRouter({
       name: "el-typography",
       component: ElTypography,
     },
+    // {
+    //   path: "/test",
+    //   name: "test",
+    //   component: waterfall,
+    // },
     // 404 路由
     {
       path: "/404",

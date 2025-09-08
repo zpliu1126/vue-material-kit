@@ -207,7 +207,7 @@ watch(
               <div class="d-none d-lg-block">
                 <ul class="list-group">
                   <li class="nav-item list-group-item border-0 p-0">
-                    <RouterLink class="dropdown-item py-2 ps-3 border-radius-md" :to="{ name: '404' }">
+                    <RouterLink class="dropdown-item py-2 ps-3 border-radius-md" :to="{ name: 'achievements' }">
                       <h6
                         class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                         成果展示
@@ -215,7 +215,7 @@ watch(
                     </RouterLink>
                   </li>
                   <li class="nav-item list-group-item border-0 p-0">
-                    <RouterLink class="dropdown-item py-2 ps-3 border-radius-md" :to="{ name: '404' }">
+                    <RouterLink class="dropdown-item py-2 ps-3 border-radius-md" :to="{ name: 'peoples' }">
                       <h6
                         class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                         科研队伍
@@ -223,7 +223,7 @@ watch(
                     </RouterLink>
                   </li>
                   <li class="nav-item list-group-item border-0 p-0">
-                    <RouterLink class="dropdown-item py-2 ps-3 border-radius-md" :to="{ name: '404' }">
+                    <RouterLink class="dropdown-item py-2 ps-3 border-radius-md" :to="{ name: 'equipment' }">
                       <h6
                         class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                         实验环境
@@ -234,19 +234,19 @@ watch(
               </div>
               <div class="row d-lg-none">
                 <div class="col-md-12 g-0">
-                  <RouterLink class="dropdown-item py-2 ps-3 border-radius-md" :to="{ name: '404' }">
+                  <RouterLink class="dropdown-item py-2 ps-3 border-radius-md" :to="{ name: 'achievements' }">
                     <h6
                       class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                       成果展示
                     </h6>
                   </RouterLink>
-                  <RouterLink class="dropdown-item py-2 ps-3 border-radius-md" :to="{ name: '404' }">
+                  <RouterLink class="dropdown-item py-2 ps-3 border-radius-md" :to="{ name: 'peoples' }">
                     <h6
                       class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                       科研队伍
                     </h6>
                   </RouterLink>
-                  <RouterLink class="dropdown-item py-2 ps-3 border-radius-md" :to="{ name: '404' }">
+                  <RouterLink class="dropdown-item py-2 ps-3 border-radius-md" :to="{ name: 'equipment' }">
                     <h6
                       class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                       实验环境

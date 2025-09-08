@@ -55,10 +55,10 @@ onUnmounted(() => {
             <div id="typed-strings">
               <h1>an amazing team</h1>
             </div>
-            <p class="lead mb-4 text-white opacity-8">
+            <!-- <p class="lead mb-4 text-white opacity-8">
               We’re constantly trying to express ourselves and actualize our
               dreams. If you have the opportunity to play this game
-            </p>
+            </p> -->
           </div>
         </div>
       </div>
