@@ -26,6 +26,7 @@ import ElTypography from "../layouts/sections/elements/typography/TypographyView
 
 //self component
 import LoseSite from "@/components_myself/404.vue";
+import testView from "@/components_myself/test.vue";
 import EquipmentView from "../views/equipment/equipment.vue";
 import achievementView from "../views/achievement/achievement.vue";
 import peopleView from "../views/people/people.vue";
@@ -39,6 +40,9 @@ import TeacherView_jsx from '../views/TeacherShowInformation/TeacherSXJin.vue'
 import TeacherView_yxy from '../views/TeacherShowInformation/TeacherXYYang.vue'
 import TeacherView_lzx from '../views/TeacherShowInformation/TeacherZXLin.vue'
 import TeacherView_tll from '../views/TeacherShowInformation/TeacherllTu.vue'
+
+
+
 const router = createRouter({
   // history: createWebHistory(import.meta.env.BASE_URL),
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -228,11 +232,11 @@ const router = createRouter({
       name: "el-typography",
       component: ElTypography,
     },
-    // {
-    //   path: "/test",
-    //   name: "test",
-    //   component: waterfall,
-    // },
+    {
+      path: "/test",
+      name: "test",
+      component: testView,
+    },
     // 404 路由
     {
       path: "/404",
